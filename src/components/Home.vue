@@ -1,15 +1,13 @@
 <template>
   <div>
-      <el-button @click="logout" type="info">
-          退出
-      </el-button>
+    <el-button @click="logout" type="info">退出</el-button>
   </div>
 </template>
 
 <script>
 export default {
   methods: {
-    logout () {
+    logout() {
       window.sessionStorage.clear()
       this.$router.push('/login')
     }
@@ -17,5 +15,4 @@ export default {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
